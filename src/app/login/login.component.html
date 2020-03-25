@@ -1,0 +1,16 @@
+<form [formGroup]="formLogin">
+  <div class="form-row align-items-center">
+    <div class="col-auto my-1">
+      <div class="form-check">
+        <label class="form-check-label">
+          <b>Acesse</b> sua conta
+        </label>
+        <input type="text" class="form-control" formControlName="cpf" placeholder="Digite seu CPF"
+          (keypress)="onlynumber($event)" maxlength=11>
+      </div>
+    </div>
+    <div class="relative">
+      <button type="submit" class="btn btn-primary acessar-conta" (click)="login()">Acessar</button>
+    </div>
+  </div>
+</form>
