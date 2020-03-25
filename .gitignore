@@ -35,5 +35,8 @@ testem.log
 /typings
 
 # System Files
-.DS_Store
+.DS_StoreS
 Thumbs.db
+
+#pack
+/package-lock.json
